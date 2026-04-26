@@ -310,7 +310,7 @@ function Landing() {
                   src={m.photo}
                   alt={m.name}
                   style={{
-                    width: 110, height: 110,
+                    width: 160, height: 160,
                     borderRadius: '50%',
                     objectFit: 'cover',
                     objectPosition: 'center top',
