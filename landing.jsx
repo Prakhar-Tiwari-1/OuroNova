@@ -302,8 +302,8 @@ function Landing() {
           <div style={{ display: 'flex', justifyContent: 'center', gap: 64, marginTop: 52 }}>
             {[
               { name: 'Prakhar Tiwari', role: 'CEO', photo: 'uploads/Team%20Members/Prakhar_Tiwari_CEO.png' },
-              { name: 'Nai Maria', role: 'CFO', photo: 'uploads/Team%20Members/Nai_Maria_CFO.jpeg' },
-              { name: 'Ziqi Meng', role: 'CTO', photo: 'uploads/Team%20Members/Ziqi_Meng_CTO.jpeg', imgStyle: { objectFit: 'contain' } },
+              { name: 'Nai Maria', role: 'CFO', photo: 'uploads/Team%20Members/Nai_Maria_CFO.jpeg', imgStyle: { objectPosition: 'center 20%' } },
+              { name: 'Ziqi Meng', role: 'CTO', photo: 'uploads/Team%20Members/Ziqi_Meng_CTO.jpeg', imgStyle: { objectPosition: 'center 30%' } },
             ].map((m) => (
               <div key={m.name} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16 }}>
                 <img
