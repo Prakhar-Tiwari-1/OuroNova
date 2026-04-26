@@ -292,9 +292,46 @@ function Landing() {
         </button>
       </section>
 
+      {/* TEAM */}
+      <section id="team" style={{ padding: '80px 48px', background: 'var(--bg-2)', borderTop: '1px solid var(--line)' }}>
+        <div style={{ maxWidth: 1180, margin: '0 auto', textAlign: 'center' }}>
+          <div className="label" style={{ color: 'var(--moss)' }}>The team</div>
+          <div className="serif" style={{ fontSize: 40, lineHeight: 1, marginTop: 14, fontWeight: 500, letterSpacing: '-0.015em' }}>
+            Built at École Polytechnique
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: 64, marginTop: 52 }}>
+            {[
+              { name: 'Prakhar Tiwari', role: 'CEO', photo: 'uploads/Team%20Members/Prakhar_Tiwari_CEO.png' },
+              { name: 'Nai Maria', role: 'CFO', photo: 'uploads/Team%20Members/Nai_Maria_CFO.jpeg' },
+              { name: 'Ziqi Meng', role: 'CTO', photo: 'uploads/Team%20Members/Ziqi_Meng_CTO.jpeg' },
+            ].map((m) => (
+              <div key={m.name} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16 }}>
+                <img
+                  src={m.photo}
+                  alt={m.name}
+                  style={{
+                    width: 110, height: 110,
+                    borderRadius: '50%',
+                    objectFit: 'cover',
+                    objectPosition: 'center top',
+                    border: '2px solid var(--line)',
+                    boxShadow: '0 2px 16px rgba(31,58,46,0.12)',
+                  }}
+                />
+                <div>
+                  <div style={{ fontWeight: 500, fontSize: 15, color: 'var(--ink)' }}>{m.name}</div>
+                  <div className="label" style={{ color: 'var(--moss)', marginTop: 4 }}>{m.role}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="tiny muted" style={{ marginTop: 48 }}>EuroTeQaThon 2025 · École Polytechnique (l'X)</div>
+        </div>
+      </section>
+
       {/* footer */}
-      <footer id="team" style={{
-        padding: '40px 48px', borderTop: '1px solid var(--line)',
+      <footer style={{
+        padding: '28px 48px', borderTop: '1px solid var(--line)',
         display: 'flex', justifyContent: 'space-between', alignItems: 'center',
         fontSize: 12, color: 'var(--ink-3)', background: 'var(--bg-2)',
       }}>
