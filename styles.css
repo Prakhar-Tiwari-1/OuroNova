@@ -257,7 +257,7 @@ img.sidebar-logo {
   background: linear-gradient(180deg, transparent 50%, rgba(31,58,46,0.35));
 }
 .ph-img > * { position: relative; z-index: 1; }
-.ph-img.kitchen { background-image: url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'); }
+.ph-img.kitchen { background-image: url('uploads/kitchen_photo.webp'); }
 .ph-img.oak { background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80'); }
 .ph-img.copper { background-image: url('https://images.unsplash.com/photo-1517490232338-06b912a786b5?w=1200&q=80'); }
 .ph-img.marble { background-image: url('https://images.unsplash.com/photo-1615873968403-89e068629265?w=1200&q=80'); }

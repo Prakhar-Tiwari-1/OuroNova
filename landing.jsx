@@ -1,4 +1,4 @@
-// Landing page — public hero
+﻿// Landing page, public hero
 function Landing() {
   const { go } = useRoute();
   return (
@@ -19,7 +19,7 @@ function Landing() {
         </nav>
       </header>
 
-      {/* HERO — circular economy slogan */}
+      {/* HERO, circular economy slogan */}
       <section style={{ padding: '88px 48px 80px', maxWidth: 1180, margin: '0 auto' }}>
         <div className="label" style={{ color: 'var(--moss)', marginBottom: 18 }}>OURONOVA · CIRCULAR RENOVATION, ENGINEERED</div>
         <h1 className="serif" style={{
@@ -37,7 +37,7 @@ function Landing() {
           fontSize: 20, lineHeight: 1.5, color: 'var(--ink-2)',
           maxWidth: 660, marginTop: 36, fontFamily: 'var(--serif)', fontWeight: 400, fontStyle: 'italic',
         }}>
-          OuroNova powers the circular economy of home renovation in France — turning yesterday's
+          OuroNova powers the circular economy of home renovation in France, turning yesterday's
           demolition into tomorrow's raw material, while unlocking the €21,800 average in stackable
           public aid that 68% of eligible homeowners never claim.
         </p>
@@ -57,23 +57,6 @@ function Landing() {
           <div className="ph-img oak" />
         </div>
 
-        {/* numbers strip — circular economy + France-specific */}
-        <div style={{
-          display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 0,
-          marginTop: 56, paddingTop: 36, borderTop: '1px solid var(--line)',
-        }}>
-          {[
-            ['46M t', "France's annual construction & demolition waste"],
-            ['€70k', "max MaPrimeRénov' Parcours Accompagné per home"],
-            ['68%', 'of eligible French homeowners never claim aid'],
-            ['×4', 'reuse multiplier for resource-efficient renovations'],
-          ].map(([n, l]) => (
-            <div key={l} style={{ paddingRight: 16 }}>
-              <div className="serif" style={{ fontSize: 42, lineHeight: 1, letterSpacing: '-0.015em', color: 'var(--moss-deep)', fontWeight: 500 }}>{n}</div>
-              <div className="small muted" style={{ marginTop: 10, maxWidth: 200 }}>{l}</div>
-            </div>
-          ))}
-        </div>
       </section>
 
       {/* STORY section */}
@@ -89,18 +72,18 @@ function Landing() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: 56 }}>
               {[
                 {
-                  who: 'CAMILLE — homeowner, Paris 11e',
-                  body: "She owns a 1972 apartment rated DPE F. She qualifies for €21,800 in stacked aid (MaPrimeRénov' + CEE + Éco-PTZ + TVA 5,5%) — but the application paths are fragmented across four ministries. So she hires a contractor, claims nothing, and overpays.",
+                  who: 'CAMILLE, homeowner, Paris 11e',
+                  body: "She owns a 1972 apartment rated DPE F. She qualifies for €21,800 in stacked aid (MaPrimeRénov' + CEE + Éco-PTZ + TVA 5,5%), but the application paths are fragmented across four ministries. So she hires a contractor, claims nothing, and overpays.",
                   pain: 'Information asymmetry → misses €21,800 in stackable French aid.',
                 },
                 {
-                  who: 'KARIM — contractor, Lyon',
-                  body: "He pays €120 per tonne to dump renovation debris. The copper piping alone is worth €220, but listing it elsewhere means tire-kickers and zero trust framework. So it goes in the skip — and out of the circular economy.",
+                  who: 'KARIM, contractor, Lyon',
+                  body: "He pays €120 per tonne to dump renovation debris. The copper piping alone is worth €220, but listing it elsewhere means tire-kickers and zero trust framework. So it goes in the skip, and out of the circular economy.",
                   pain: 'Disposal cost → revenue loss → 70% of reusable material landfilled.',
                 },
                 {
-                  who: 'ÉLODIE — furniture maker, Marseille',
-                  body: "She drives 60 km every Saturday hoping to find reclaimed oak. Half the time she leaves empty-handed and buys virgin wood at €5/kg. The waste oak exists — it's just locked outside the loop.",
+                  who: 'ÉLODIE, furniture maker, Marseille',
+                  body: "She drives 60 km every Saturday hoping to find reclaimed oak. Half the time she leaves empty-handed and buys virgin wood at €5/kg. The waste oak exists, it's just locked outside the loop.",
                   pain: 'Fragmented supply → buys virgin at 2–3× the price.',
                 },
               ].map((s, i) => (
@@ -137,10 +120,10 @@ function Landing() {
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 0, marginTop: 56 }}>
             {[
               ['46 M tonnes', 'France generates more construction & demolition waste annually than all household waste combined.'],
-              ['78%', "share of construction waste currently downcycled or landfilled — only 1% is reused at material grade."],
+              ['78%', "share of construction waste currently downcycled or landfilled, only 1% is reused at material grade."],
               ['€21,800', "average stackable aid a French DPE-F homeowner can claim across MaPrimeRénov' + CEE + TVA 5,5% + local schemes."],
               ['×4', 'EU circular economy targets call for quadrupling material reuse rates by 2030 (Renovation Wave directive).'],
-              ['68%', 'of eligible French homeowners never claim a single euro of renovation aid — paperwork friction is the #1 reason cited.'],
+              ['68%', 'of eligible French homeowners never claim a single euro of renovation aid, paperwork friction is the #1 reason cited.'],
               ['40–80%', 'lower embodied carbon when reclaimed materials replace virgin steel, copper, oak, or marble.'],
             ].map(([n, l], i) => (
               <div key={i} style={{
@@ -163,7 +146,7 @@ function Landing() {
       {/* HOW IT WORKS */}
       <section id="how" style={{ padding: '100px 48px', background: 'var(--bg)' }}>
         <div style={{ maxWidth: 1180, margin: '0 auto' }}>
-          <div className="label" style={{ color: 'var(--moss)' }}>01 — How the loop closes</div>
+          <div className="label" style={{ color: 'var(--moss)' }}>01: How the loop closes</div>
           <h2 className="serif" style={{ fontSize: 64, lineHeight: 1.02, marginTop: 14, maxWidth: 800, fontWeight: 500, letterSpacing: '-0.015em' }}>
             Three sides of<br/>the same circle.
           </h2>
@@ -176,7 +159,7 @@ function Landing() {
                 num: '01',
                 role: 'Homeowner',
                 title: 'Photograph the room.',
-                body: "AI identifies what to upgrade, which reclaimed materials fit, and exactly which French aid you qualify for — MaPrimeRénov', CEE, Éco-PTZ, TVA 5,5%, regional bonuses — stacked into one number.",
+                body: "AI identifies what to upgrade, which reclaimed materials fit, and exactly which French aid you qualify for, MaPrimeRénov', CEE, Éco-PTZ, TVA 5,5%, regional bonuses, stacked into one number.",
                 cta: ['Try photo analysis', 'analyze'],
                 img: 'kitchen',
               },
@@ -192,7 +175,7 @@ function Landing() {
                 num: '03',
                 role: 'Buyer',
                 title: 'Source reclaimed locally.',
-                body: 'Find oak, copper, marble within 25 km. Verified sellers, transparent pricing, the carbon cost of pickup shown upfront — no greenwashing.',
+                body: 'Find oak, copper, marble within 25 km. Verified sellers, transparent pricing, the carbon cost of pickup shown upfront, no greenwashing.',
                 cta: ['Browse marketplace', 'browse'],
                 img: 'craft',
               },
@@ -223,7 +206,7 @@ function Landing() {
       {/* IMPACT + SDG */}
       <section id="impact" style={{ padding: '100px 48px', background: 'var(--moss-mist)', borderTop: '1px solid var(--line)' }}>
         <div style={{ maxWidth: 1180, margin: '0 auto' }}>
-          <div className="label" style={{ color: 'var(--moss)' }}>02 — Year 1 targets</div>
+          <div className="label" style={{ color: 'var(--moss)' }}>02: Year 1 targets</div>
           <h2 className="serif" style={{ fontSize: 64, lineHeight: 1.02, marginTop: 14, maxWidth: 900, fontWeight: 500, letterSpacing: '-0.015em' }}>
             Measurable<br/>by design.
           </h2>
@@ -257,24 +240,24 @@ function Landing() {
               {[
                 {
                   num: 12,
-                  logo: 'assets/SDG_12.jpg',
+                  logo: 'assets/SDG_12.gif',
                   title: 'Responsible Consumption & Production',
                   body: 'Marketplace diverts reusable materials from landfills. AI nudges homeowners toward 40% lower-carbon reclaimed alternatives.',
-                  target: 'Target 12.5 — substantially reduce waste through reuse',
+                  target: 'Target 12.5: substantially reduce waste through reuse',
                 },
                 {
                   num: 11,
                   logo: 'assets/SDG_11.gif',
                   title: 'Sustainable Cities & Communities',
-                  body: 'Targets residential urban renovations within 25 km radius — connecting local contractors, homeowners, craftspeople.',
-                  target: 'Target 11.6 — reduce environmental impact of cities',
+                  body: 'Targets residential urban renovations within 25 km radius, connecting local contractors, homeowners, craftspeople.',
+                  target: 'Target 11.6: reduce environmental impact of cities',
                 },
                 {
                   num: 9,
-                  logo: 'assets/SDG_9.jpg',
+                  logo: 'assets/SDG_9.gif',
                   title: 'Industry, Innovation & Infrastructure',
                   body: 'Digital infrastructure for circular construction. Gives contractors economic incentive to salvage instead of dump.',
-                  target: 'Target 9.4 — sustainable, resource-efficient infrastructure',
+                  target: 'Target 9.4: sustainable, resource-efficient infrastructure',
                 },
               ].map((s) => (
                 <div key={s.num} style={{
@@ -319,7 +302,7 @@ function Landing() {
           <img src="assets/ouronova-logo.png" alt="OuroNova" style={{ height: 24, opacity: 0.7 }} />
           <span>· École Polytechnique (l'X) · EuroTeQaThon 2025</span>
         </div>
-        <div>Theme: Enhance connections — people, technology and nature</div>
+        <div>Theme: Enhance connections, people, technology and nature</div>
       </footer>
     </div>
   );

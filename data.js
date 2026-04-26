@@ -1,10 +1,10 @@
-// Sparse demo data for OuroNova MVP
+﻿// Sparse demo data for OuroNova MVP
 window.OURO_DATA = {
   // Sample marketplace listings (France)
   listings: [
     {
       id: 'lst-001',
-      title: 'Solid oak kitchen cabinets — 4.2m run',
+      title: 'Solid oak kitchen cabinets, 4.2m run',
       material: 'Reclaimed Oak',
       grade: 'A',
       price: 480,
@@ -25,7 +25,7 @@ window.OURO_DATA = {
     },
     {
       id: 'lst-002',
-      title: 'Copper piping offcuts — ~38kg',
+      title: 'Copper piping offcuts, ~38kg',
       material: 'Copper',
       grade: 'B',
       price: 220,
@@ -46,7 +46,7 @@ window.OURO_DATA = {
     },
     {
       id: 'lst-003',
-      title: 'Vintage Carrara marble countertop — 2.4m',
+      title: 'Vintage Carrara marble countertop, 2.4m',
       material: 'Carrara Marble',
       grade: 'A',
       price: 690,
@@ -59,7 +59,7 @@ window.OURO_DATA = {
       sellerJobs: 17,
       year: 1998,
       hazard: false,
-      desc: 'Single piece, 2400×640×30mm. Light staining near sink cutout — easily polished out. Original beveled edge.',
+      desc: 'Single piece, 2400×640×30mm. Light staining near sink cutout, easily polished out. Original beveled edge.',
       tags: ['stone', 'kitchen', 'countertop'],
       pickup: 'Forklift required. Loading bay on-site.',
       photo: 'marble',
@@ -67,7 +67,7 @@ window.OURO_DATA = {
     },
     {
       id: 'lst-004',
-      title: 'Industrial steel beams — IPN 200',
+      title: 'Industrial steel beams, IPN 200',
       material: 'Structural Steel',
       grade: 'C',
       price: 340,
@@ -101,7 +101,7 @@ window.OURO_DATA = {
       sellerJobs: 8,
       year: 1978,
       hazard: true,
-      hazardNote: 'Pre-1990 — recommend lead-paint test on grout (€140).',
+      hazardNote: 'Pre-1990, recommend lead-paint test on grout (€140).',
       desc: 'Hand-made hexagonal tiles from a Languedoc farmhouse. Beautiful warm patina. Sold as full lot.',
       tags: ['ceramic', 'flooring', 'heritage'],
       pickup: 'Already palletized. Self-pickup with utility vehicle.',
@@ -123,7 +123,7 @@ window.OURO_DATA = {
       sellerJobs: 31,
       year: 1962,
       hazard: false,
-      desc: 'Tested at 6 bar, fully functional. Original cream paint flaking — sandblasting recommended before repaint.',
+      desc: 'Tested at 6 bar, fully functional. Original cream paint flaking, sandblasting recommended before repaint.',
       tags: ['heating', 'metal', 'heritage'],
       pickup: 'Disassembled, on pallets.',
       photo: 'radiator',
@@ -131,7 +131,7 @@ window.OURO_DATA = {
     },
   ],
 
-  // French renovation policies — actual 2026 schemes
+  // French renovation policies, actual 2026 schemes
   subsidies: [
     {
       id: 'mpr-ampleur',
@@ -155,7 +155,7 @@ window.OURO_DATA = {
       eligibility: ['Home ≥15 years old', 'Primary residence', 'RGE contractor', 'Quote signed AFTER application'],
       timeline: '4–8 weeks',
       match: 0.88,
-      stat: '68% of eligible owners never claim — most cite paperwork friction.',
+      stat: '68% of eligible owners never claim, most cite paperwork friction.',
     },
     {
       id: 'cee',
@@ -171,7 +171,7 @@ window.OURO_DATA = {
     },
     {
       id: 'eco-ptz',
-      name: 'Éco-PTZ — Prêt à Taux Zéro',
+      name: 'Éco-PTZ: Prêt à Taux Zéro',
       tag: 'Zero-interest loan',
       max: 50000,
       typical: 28000,
@@ -199,7 +199,7 @@ window.OURO_DATA = {
       tag: 'Regional bonus',
       max: 3500,
       typical: 1200,
-      desc: 'Top-up grants from Région Île-de-France + your commune. Often unknown by applicants — check separately.',
+      desc: 'Top-up grants from Région Île-de-France + your commune. Often unknown by applicants, check separately.',
       eligibility: ['Resident of Île-de-France', 'Stackable with national aids'],
       timeline: '6–10 weeks',
       match: 0.72,
@@ -207,7 +207,7 @@ window.OURO_DATA = {
     },
   ],
 
-  // Cost tiers — kitchen renovation example
+  // Cost tiers, kitchen renovation example
   costTiers: [
     {
       key: 'budget',
@@ -230,7 +230,7 @@ window.OURO_DATA = {
       key: 'mid',
       label: 'Mid-range',
       range: [7800, 12400],
-      desc: 'Mix of reclaimed and new — quartz, induction, mid-tier appliances.',
+      desc: 'Mix of reclaimed and new, quartz, induction, mid-tier appliances.',
       breakdown: [
         { item: 'Custom oak fronts (reclaimed)', cost: 1800, recycled: true },
         { item: 'New cabinet frames', cost: 2400, recycled: false },
@@ -279,25 +279,25 @@ window.OURO_DATA = {
     activity: [
       { date: 'Apr 22', text: 'Listed: solid oak kitchen cabinets', meta: '+142 kg CO₂ avoided' },
       { date: 'Apr 14', text: 'Subsidy match: MaPrimeRénov\' Isolation', meta: '€3,200 unlocked' },
-      { date: 'Apr 09', text: 'Purchase: reclaimed terracotta tiles', meta: '€290 — 96 kg CO₂ saved' },
+      { date: 'Apr 09', text: 'Purchase: reclaimed terracotta tiles', meta: '€290,96 kg CO₂ saved' },
       { date: 'Mar 28', text: 'Photo analysis: kitchen renovation', meta: '3 estimates generated' },
     ],
   },
 
-  // Hardcoded photo analysis result — enriched with upgrade plan + circular materials + policy match
+  // Hardcoded photo analysis result, enriched with upgrade plan + circular materials + policy match
   photoAnalysis: {
     room: 'Kitchen',
     sqm: 14,
     yearBuilt: 1972,
-    dpe: 'F — Thermal sieve',
+    dpe: 'F: Thermal sieve',
     dpePotential: 'C',
     detected: [
-      { item: 'Laminate cabinet fronts', condition: 'Worn — replace', salvage: false, age: '~15 yrs' },
-      { item: 'Stainless steel sink', condition: 'Good — keep or relist', salvage: true, age: '~8 yrs' },
-      { item: 'Tiled splashback', condition: 'Dated — strip', salvage: false, age: '~25 yrs' },
-      { item: 'Linoleum flooring', condition: 'Damaged — dispose', salvage: false, age: '~20 yrs' },
+      { item: 'Laminate cabinet fronts', condition: 'Worn: replace', salvage: false, age: '~15 yrs' },
+      { item: 'Stainless steel sink', condition: 'Good: keep or relist', salvage: true, age: '~8 yrs' },
+      { item: 'Tiled splashback', condition: 'Dated: strip', salvage: false, age: '~25 yrs' },
+      { item: 'Linoleum flooring', condition: 'Damaged: dispose', salvage: false, age: '~20 yrs' },
       { item: 'Single-glazed window', condition: 'Major heat loss', salvage: false, age: '~50 yrs' },
-      { item: 'Old electric radiator', condition: 'Inefficient — replace', salvage: false, age: '~22 yrs' },
+      { item: 'Old electric radiator', condition: 'Inefficient: replace', salvage: false, age: '~22 yrs' },
     ],
     upgrades: [
       {
@@ -340,12 +340,12 @@ window.OURO_DATA = {
       outOfPocket: 10700,
       schemes: [
         { id: 'mpr-ampleur', amount: 14400, label: "MaPrimeRénov\u2019 Parcours Accompagné" },
-        { id: 'cee', amount: 3200, label: 'CEE — EDF « Coup de pouce »' },
+        { id: 'cee', amount: 3200, label: 'CEE: EDF « Coup de pouce »' },
         { id: 'tva-5-5', amount: 2640, label: 'TVA réduite 5,5%' },
         { id: 'local', amount: 1560, label: 'Aide Région Île-de-France' },
       ],
     },
-    materialEstimate: '1.4 tonnes demolition material — €280 disposal cost OR €410 marketplace value',
+    materialEstimate: '1.4 tonnes demolition material, €280 disposal cost OR €410 marketplace value',
     confidence: 0.86,
   },
 };

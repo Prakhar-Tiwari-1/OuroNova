@@ -1,4 +1,4 @@
-// Marketplace: Browse + Listing detail + List a material (contractor)
+﻿// Marketplace: Browse + Listing detail + List a material (contractor)
 const MD = window.OURO_DATA;
 
 function gradePill(g) {
@@ -30,7 +30,7 @@ function ListingCard({ l, onOpen }) {
           </div>
         </div>
         {l.hazard && (
-          <div className="chip warn" style={{ marginTop: 10, fontSize: 10.5 }}>⚠ Pre-1990 — testing recommended</div>
+          <div className="chip warn" style={{ marginTop: 10, fontSize: 10.5 }}>⚠ Pre-1990, testing recommended</div>
         )}
       </div>
     </div>
@@ -66,7 +66,7 @@ function Browse() {
           <div className="label">Marketplace</div>
           <h1>Reclaimed materials, listed locally.</h1>
           <div className="sub">Verified contractors and homeowners. Quality-graded, distance-aware.
-          The carbon cost of pickup is shown upfront — we don't pretend trips are free.</div>
+          The carbon cost of pickup is shown upfront, we don't pretend trips are free.</div>
         </div>
         <button className="btn ghost" onClick={() => go('list')}>+ List a material</button>
       </div>
@@ -87,9 +87,9 @@ function Browse() {
           <div className="field-label">Grade</div>
           <select className="txt" value={grade} onChange={e => setGrade(e.target.value)}>
             <option value="all">All grades</option>
-            <option value="A">A — Intact</option>
-            <option value="B">B — Minor repairs</option>
-            <option value="C">C — Raw value</option>
+            <option value="A">A: Intact</option>
+            <option value="B">B: Minor repairs</option>
+            <option value="C">C: Raw value</option>
           </select>
         </div>
         <div className="field">
@@ -253,7 +253,7 @@ function ListMaterial() {
     if (step >= aiSteps.length) {
       const t = setTimeout(() => {
         setDraft({
-          title: 'Reclaimed pine flooring planks — ~22 m²',
+          title: 'Reclaimed pine flooring planks, ~22 m²',
           material: 'Reclaimed Pine',
           grade: 'B',
           price: '340',
@@ -293,8 +293,8 @@ function ListMaterial() {
             <ul style={{ paddingLeft: 18, marginTop: 12, lineHeight: 1.8, color: 'var(--ink-2)', fontSize: 13.5 }}>
               <li>Include a known-size object (broom, ruler) for scale.</li>
               <li>Daylight, no flash, neutral background if possible.</li>
-              <li>One material per listing — separate piles get separate listings.</li>
-              <li>Capture any defects close-up — buyers prefer transparency.</li>
+              <li>One material per listing, separate piles get separate listings.</li>
+              <li>Capture any defects close-up, buyers prefer transparency.</li>
             </ul>
             <div className="card" style={{ marginTop: 20, background: 'var(--moss-soft)', borderColor: 'transparent' }}>
               <div className="label" style={{ color: 'var(--moss-ink)' }}>Earnings forecast</div>
@@ -328,7 +328,7 @@ function ListMaterial() {
       {stage === 'review' && (
         <div className="fade-in" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24 }}>
           <div>
-            <div className="label">AI draft — review & edit</div>
+            <div className="label">AI draft: review & edit</div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 14, marginTop: 12 }}>
               <div className="field">
                 <div className="field-label">Title</div>

@@ -1,4 +1,4 @@
-// Homeowner: Photo analysis + Cost estimate + Subsidies
+﻿// Homeowner: Photo analysis + Cost estimate + Subsidies
 const D = window.OURO_DATA;
 
 function PhotoAnalyze() {
@@ -30,10 +30,10 @@ function PhotoAnalyze() {
     <div>
       <div className="page-hero">
         <div>
-          <div className="label">Step 1 of 3 — Homeowner</div>
+          <div className="label">Step 1 of 3: Homeowner</div>
           <h1>Photograph the room you want to renovate.</h1>
           <div className="sub">Our AI reads the space, identifies salvageable materials, and prepares
-          tiered cost estimates with sustainable alternatives. No upload required for the demo —
+          tiered cost estimates with sustainable alternatives. No upload required for the demo,
           we'll use a sample kitchen.</div>
         </div>
       </div>
@@ -57,7 +57,7 @@ function PhotoAnalyze() {
             <div className="label">What we'll detect</div>
             <ul style={{ listStyle: 'none', padding: 0, margin: '12px 0 0', display: 'flex', flexDirection: 'column', gap: 12 }}>
               {[
-                ['Room type & dimensions', 'Bath, kitchen, living — estimated m²'],
+                ['Room type & dimensions', 'Bath, kitchen, living: estimated m²'],
                 ['Surface materials', 'Tile, wood, laminate, paint condition'],
                 ['Salvageable items', 'What\'s worth listing on the marketplace'],
                 ['Subsidy fit', 'Match scope to MaPrimeRénov\' eligibility'],
@@ -108,7 +108,7 @@ function PhotoAnalyze() {
                 Your kitchen scored <span style={{ color: '#c0392b' }}>{D.photoAnalysis.dpe}</span>.
               </div>
               <div className="small muted" style={{ marginTop: 6 }}>
-                With the right works, it can reach class <b style={{ color: 'var(--moss)' }}>{D.photoAnalysis.dpePotential}</b> — and unlock <b style={{ color: 'var(--moss)' }}>€{D.photoAnalysis.policyMatch.stackedTotal.toLocaleString()}</b> in stackable French aid.
+                With the right works, it can reach class <b style={{ color: 'var(--moss)' }}>{D.photoAnalysis.dpePotential}</b>, and unlock <b style={{ color: 'var(--moss)' }}>€{D.photoAnalysis.policyMatch.stackedTotal.toLocaleString()}</b> in stackable French aid.
               </div>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 4 }}>
@@ -171,7 +171,7 @@ function PhotoAnalyze() {
             <div className="card" style={{ background: 'var(--moss-deep)', color: 'var(--bg)', borderColor: 'var(--moss-deep)' }}>
               <div className="label" style={{ color: '#a8c4b3' }}>③ What the State pays</div>
               <div className="serif" style={{ fontSize: 19, marginTop: 6, marginBottom: 4, fontWeight: 500 }}>French policy match</div>
-              <div className="tiny" style={{ color: '#a8c4b3', marginBottom: 14 }}>Stackable schemes — pre-filled from your photo + profile.</div>
+              <div className="tiny" style={{ color: '#a8c4b3', marginBottom: 14 }}>Stackable schemes: pre-filled from your photo + profile.</div>
 
               <div style={{ padding: '14px 0', borderTop: '1px solid var(--moss-2)', borderBottom: '1px solid var(--moss-2)' }}>
                 <div className="tiny" style={{ color: '#a8c4b3' }}>Total works</div>
@@ -222,7 +222,7 @@ function CostEstimate() {
     <div>
       <div className="page-hero">
         <div>
-          <div className="label">Step 2 of 3 — Homeowner</div>
+          <div className="label">Step 2 of 3: Homeowner</div>
           <h1>Three ways to renovate, fully costed.</h1>
           <div className="sub">Pick the tier that fits your budget. We'll show what's reclaimed,
           embodied carbon, and which subsidies apply.</div>
@@ -343,7 +343,7 @@ function Subsidies() {
     <div>
       <div className="page-hero">
         <div>
-          <div className="label">Step 3 of 3 — Homeowner</div>
+          <div className="label">Step 3 of 3: Homeowner</div>
           <h1>Stop leaving money on the table.</h1>
           <div className="sub">68% of eligible French homeowners never claim subsidies they qualify for.
           We pre-fill the eligibility checks based on your photo analysis.</div>
@@ -370,10 +370,10 @@ function Subsidies() {
             <div className="field">
               <div className="field-label">Annual household income</div>
               <select className="txt" value={income} onChange={e => setIncome(e.target.value)}>
-                <option value="blue">≤ €40,000 — Bleu</option>
-                <option value="yellow">€40k – €60k — Jaune</option>
-                <option value="purple">€60k – €80k — Violet</option>
-                <option value="pink">≥ €80,000 — Rose</option>
+                <option value="blue">≤ €40,000, Bleu</option>
+                <option value="yellow">€40k – €60k, Jaune</option>
+                <option value="purple">€60k – €80k, Violet</option>
+                <option value="pink">≥ €80,000, Rose</option>
               </select>
             </div>
             <div className="field">
@@ -392,7 +392,7 @@ function Subsidies() {
           </div>
           <div className="hr-dot" style={{ margin: '20px 0' }}></div>
           <div className="tiny muted">
-            Pre-filled from your kitchen photo analysis. Edit any field — matches update live.
+            Pre-filled from your kitchen photo analysis. Edit any field, matches update live.
           </div>
         </div>
 
