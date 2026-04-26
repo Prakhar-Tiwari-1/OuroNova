@@ -257,21 +257,21 @@ function Landing() {
               {[
                 {
                   num: 12,
-                  color: '#BF8B2E',
+                  logo: 'assets/SDG_12.jpg',
                   title: 'Responsible Consumption & Production',
                   body: 'Marketplace diverts reusable materials from landfills. AI nudges homeowners toward 40% lower-carbon reclaimed alternatives.',
                   target: 'Target 12.5 — substantially reduce waste through reuse',
                 },
                 {
                   num: 11,
-                  color: '#F99D26',
+                  logo: 'assets/SDG_11.gif',
                   title: 'Sustainable Cities & Communities',
                   body: 'Targets residential urban renovations within 25 km radius — connecting local contractors, homeowners, craftspeople.',
                   target: 'Target 11.6 — reduce environmental impact of cities',
                 },
                 {
                   num: 9,
-                  color: '#FD6925',
+                  logo: 'assets/SDG_9.jpg',
                   title: 'Industry, Innovation & Infrastructure',
                   body: 'Digital infrastructure for circular construction. Gives contractors economic incentive to salvage instead of dump.',
                   target: 'Target 9.4 — sustainable, resource-efficient infrastructure',
@@ -282,20 +282,7 @@ function Landing() {
                   border: '1px solid rgba(0,0,0,0.06)',
                   display: 'flex', flexDirection: 'column', gap: 14,
                 }}>
-                  <div style={{
-                    width: 80, height: 80,
-                    background: s.color,
-                    color: 'white',
-                    display: 'flex', flexDirection: 'column',
-                    justifyContent: 'space-between',
-                    padding: '8px 10px',
-                    borderRadius: 4,
-                    fontFamily: 'var(--sans)',
-                    fontWeight: 700,
-                  }}>
-                    <div style={{ fontSize: 11, letterSpacing: '0.04em' }}>SDG</div>
-                    <div style={{ fontSize: 38, lineHeight: 0.9 }}>{s.num}</div>
-                  </div>
+                  <img src={s.logo} alt={'SDG ' + s.num} style={{ width: 80, height: 80, objectFit: 'cover', borderRadius: 4 }} />
                   <div className="serif" style={{ fontSize: 22, fontWeight: 500, lineHeight: 1.15, color: 'var(--moss-deep)' }}>{s.title}</div>
                   <div className="small muted" style={{ flex: 1 }}>{s.body}</div>
                   <div className="tiny" style={{ color: 'var(--moss)', fontWeight: 500 }}>{s.target}</div>
