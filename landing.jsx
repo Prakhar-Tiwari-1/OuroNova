@@ -303,19 +303,20 @@ function Landing() {
             {[
               { name: 'Prakhar Tiwari', role: 'CEO', photo: 'uploads/Team%20Members/Prakhar_Tiwari_CEO.png' },
               { name: 'Nai Maria', role: 'CFO', photo: 'uploads/Team%20Members/Nai_Maria_CFO.jpeg' },
-              { name: 'Ziqi Meng', role: 'CTO', photo: 'uploads/Team%20Members/Ziqi_Meng_CTO.jpeg' },
+              { name: 'Ziqi Meng', role: 'CTO', photo: 'uploads/Team%20Members/Ziqi_Meng_CTO.jpeg', imgStyle: { objectFit: 'contain' } },
             ].map((m) => (
               <div key={m.name} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16 }}>
                 <img
                   src={m.photo}
                   alt={m.name}
                   style={{
-                    width: 160, height: 160,
+                    width: 185, height: 185,
                     borderRadius: '50%',
                     objectFit: 'cover',
                     objectPosition: 'center top',
                     border: '2px solid var(--line)',
                     boxShadow: '0 2px 16px rgba(31,58,46,0.12)',
+                    ...(m.imgStyle || {}),
                   }}
                 />
                 <div>
@@ -325,7 +326,7 @@ function Landing() {
               </div>
             ))}
           </div>
-          <div className="tiny muted" style={{ marginTop: 48 }}>EuroTeQaThon 2025 · École Polytechnique (l'X)</div>
+          <div className="tiny muted" style={{ marginTop: 48 }}>EuroTeQaThon 2026 · École Polytechnique (l'X)</div>
         </div>
       </section>
 
@@ -337,7 +338,7 @@ function Landing() {
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
           <img src="assets/ouronova-logo.png" alt="OuroNova" style={{ height: 24, opacity: 0.7 }} />
-          <span>· École Polytechnique (l'X) · EuroTeQaThon 2025</span>
+          <span>· École Polytechnique (l'X) · EuroTeQaThon 2026</span>
         </div>
         <div>Theme: Enhance connections, people, technology and nature</div>
       </footer>

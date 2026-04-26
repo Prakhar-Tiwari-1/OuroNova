@@ -1,10 +1,10 @@
-# OuroNova
+﻿# OuroNova
 
 **Circular renovation, engineered.**
 
 OuroNova closes the loop on construction waste in France by connecting homeowners, contractors, and material buyers on a single platform, unlocking the €21,800 average in stackable public aid that 68% of eligible French homeowners never claim, and turning demolition debris into marketplace revenue instead of landfill cost.
 
-Built for **EuroTeQaThon 2025** at École Polytechnique.  
+Built for **EuroTeQaThon 2026** at École Polytechnique.  
 Theme: *Enhance connections: people, technology and nature.*
 
 ---
@@ -81,4 +81,4 @@ Or open `index.html` directly in a browser.
 | Nai Maria | CFO |
 | Ziqi Meng | CTO |
 
-École Polytechnique (l'X) · EuroTeQaThon 2025
+École Polytechnique (l'X) · EuroTeQaThon 2026

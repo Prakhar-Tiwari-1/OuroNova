@@ -1,4 +1,4 @@
-// Impact dashboard
+﻿// Impact dashboard
 const ID = window.OURO_DATA;
 
 function Impact() {

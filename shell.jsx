@@ -1,4 +1,4 @@
-// App shell — sidebar nav + topbar + page router
+﻿// App shell — sidebar nav + topbar + page router
 const { useState, useEffect, useMemo, useCallback, createContext, useContext } = React;
 
 const RouteCtx = React.createContext({ route: 'landing', go: () => {} });
@@ -65,7 +65,7 @@ function Sidebar() {
       )}
       <div className="sidebar-foot">
         <div>OuroNova MVP · v0.1</div>
-        <div style={{ marginTop: 4 }}>EuroTeQaThon 2025 · École Polytechnique</div>
+        <div style={{ marginTop: 4 }}>EuroTeQaThon 2026 · École Polytechnique</div>
       </div>
     </aside>
   );
